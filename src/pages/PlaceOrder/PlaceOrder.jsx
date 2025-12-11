@@ -45,7 +45,8 @@ const PlaceOrder = () => {
     };
 
     try {
-      const response = await axios.post(
+      const response = await axios.post
+      (
         url + "/api/order/place",
         orderData,
         { headers: { token } }
